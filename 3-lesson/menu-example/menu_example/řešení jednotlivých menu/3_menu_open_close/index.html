@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu s ikonkou</title>
+    <style>
+        nav div{
+            padding-left: 0;
+            padding: 10px;
+            color: white;
+            margin: auto;
+            width: fit-content;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        nav{
+            background-color: rgb(113, 4, 4);
+        }
+        .navigation{
+            display: none;
+        }
+        .icon_hambugger{
+            display: block;
+        }
+
+        .icon_hamburger img{
+            height: 25px;
+            width: 30px;
+        }
+
+        .icon_cross{
+            display: none;
+        }
+        .icon_cross img{
+            height: 35px;
+            width: 35px;
+        }
+        .icon_bar{
+            display: block;
+        }
+        @media (min-width: 600px){
+            .navigation{
+                display: flex !important;
+                justify-content: space-evenly;
+            }
+            .icon_hamburger{
+                display: none;
+            }
+            .icon_bar{
+                display: none;
+            }
+            .icon_cross{
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        function open_menu(){
+            document.querySelector(".icon_hamburger").style.display = "none";
+            document.querySelector(".icon_cross").style.display = "block";
+            document.querySelector(".navigation").style.display = "block";
+        }
+        function close_menu() {
+            document.querySelector(".icon_hamburger").style.display = "block";
+            document.querySelector(".icon_cross").style.display = "none";
+            document.querySelector(".navigation").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="icon_bar">
+            <div class="icon_hamburger" onclick="open_menu()"><img src="./menu_icon.png"></div>
+            <div class="icon_cross" onclick="close_menu()"><img src="./menu_cross_icon.jpg"></div>
+        </div>
+        <div class="navigation">
+            <a href=""><div>Odkaz 1</div></a>
+            <a href=""><div>Odkaz 2</div></a>
+            <a href=""><div>Odkaz 3</div></a>
+            <a href=""><div>Odkaz 4</div></a>
+            <a href=""><div>Odkaz 5</div></a>
+            <a href=""><div>Odkaz 6</div></a>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu s ikonkou</title>
+    <style>
+        nav{
+            background-color: rgb(113, 4, 4);
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .icon{
+            display: none;
+        }
+
+        .icon img{
+            height: 25px;
+            width: 30px;
+        }
+        @media screen and (max-width: 600px) {
+            nav a{
+                display: none;
+            }
+            .icon{
+                display: block;
+            }
+        }
+        nav div{
+            padding-left: 0;
+            padding: 10px;
+            color: white;
+            margin: auto;
+            width: fit-content;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+            <a href=""><div>Odkaz 1</div></a>
+            <a href=""><div>Odkaz 2</div></a>
+            <a href=""><div>Odkaz 3</div></a>
+            <a href=""><div>Odkaz 4</div></a>
+            <a href=""><div>Odkaz 5</div></a>
+            <a href=""><div>Odkaz 6</div></a>
+            <div class="icon"><img src="./menu_icon.png"></div>
+    </nav>
+</body>
+</html>
