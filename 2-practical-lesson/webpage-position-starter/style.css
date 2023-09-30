@@ -1,0 +1,178 @@
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #f4f4f4;
+  --accent-color: #ff5722;
+  --text-color: #333;
+  --hover-color: #ffeb3b;
+  --footer-text: #fff;
+  --modal-overlay: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--secondary-color);
+  /* min-height: 100vh; */
+  /* position: relative; */
+}
+
+header {
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+p {
+  line-height: 1.25;
+}
+
+/* CONTENT */
+.content {
+  max-width: 70%;
+  margin: 0 auto;
+  /* padding-bottom: 145px; */
+  color: var(--text-color);
+}
+
+/* NAVIGATION */
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.navigation-wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  text-align: right;
+}
+
+.navigation-item {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.navigation-item a {
+  color: var(--secondary-color);
+}
+
+.navigation-item a:hover {
+  color: var(--hover-color);
+}
+
+.logo {
+  /* top: 50%;
+  transform: translateY(-50%); */
+}
+
+/* SECTIONS */
+.home-section,
+.about-section,
+.service-section,
+.contact-section {
+  margin-bottom: 26px;
+}
+
+/* TOOLTIP */
+.tooltip {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.tooltip-text {
+  background-color: var(--text-color);
+  color: var(--footer-text);
+  width: 200px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.tooltip:hover .tooltip-text {
+}
+
+/* MODAL */
+.modal {
+}
+.modal-content {
+  background-color: #f0f0f0;
+  width: 40%;
+  padding: 32px;
+  margin: 15% auto;
+}
+
+.close-button {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.button {
+  background-color: white;
+  margin-top: 16px;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 12px;
+  padding: 16px;
+  background-color: var(--text-color);
+  color: var(--footer-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 125px;
+}
+
+.footer-content {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-info {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.footer-social {
+  display: inline-block;
+}
+
+.footer-social li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.footer-social li a {
+  color: var(--footer-text);
+}
+
+.footer-bottom {
+  text-align: center;
+}
