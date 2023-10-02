@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu s ikonkou</title>
     <style>
-        nav{
-            background-color: green;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        @media screen and (max-width: 600px) {
-            nav{
-                display: block;
-            }
-        }
-        nav div{
-            padding-left: 0 ;
-            padding: 10px;
-            color: white;
-            margin: auto;
-            width: fit-content;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        a{
-            text-decoration: none;
+      nav {
+        background-color: green;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      nav li {
+        padding: 10px;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      @media (max-width: 576px) {
+        nav ul {
+          display: block;
         }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-            <a href=""><div>Odkaz 1</div></a>
-            <a href=""><div>Odkaz 2</div></a>
-            <a href=""><div>Odkaz 3</div></a>
-            <a href=""><div>Odkaz 4</div></a>
-            <a href=""><div>Odkaz 5</div></a>
-            <a href=""><div>Odkaz 6</div></a>
+      <ul>
+        <li>
+          <a href="#"><span>Odkaz 1</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 2</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 3</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 4</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 5</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 6</span></a>
+        </li>
+      </ul>
     </nav>
-</body>
+  </body>
 </html>
