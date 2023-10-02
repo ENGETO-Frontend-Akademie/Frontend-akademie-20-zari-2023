@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu s ikonkou</title>
     <style>
-        nav{
-            background-color: rgb(113, 4, 4);
-            display: flex;
-            justify-content: space-evenly;
-        }
-        .icon{
-            display: none;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        .icon img{
-            height: 25px;
-            width: 30px;
-        }
-        @media screen and (max-width: 600px) {
-            nav a{
-                display: none;
-            }
-            .icon{
-                display: block;
-            }
-        }
-        nav div{
-            padding-left: 0;
-            padding: 10px;
-            color: white;
-            margin: auto;
-            width: fit-content;
-        }
+      nav {
+        background-color: rgb(113, 4, 4);
+      }
 
-        a{
-            text-decoration: none;
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      nav li {
+        padding: 10px;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .icon {
+        display: none;
+        height: 25px;
+        width: 30px;
+        padding: 8px;
+        margin-left: auto;
+        cursor: pointer;
+      }
+
+      .icon img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and (max-width: 576px) {
+        nav ul {
+          display: none;
         }
+        .icon {
+          display: block;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-            <a href=""><div>Odkaz 1</div></a>
-            <a href=""><div>Odkaz 2</div></a>
-            <a href=""><div>Odkaz 3</div></a>
-            <a href=""><div>Odkaz 4</div></a>
-            <a href=""><div>Odkaz 5</div></a>
-            <a href=""><div>Odkaz 6</div></a>
-            <div class="icon"><img src="./menu_icon.png"></div>
+      <ul>
+        <li>
+          <a href="#"><span>Odkaz 1</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 2</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 3</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 4</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 5</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Odkaz 6</span></a>
+        </li>
+      </ul>
+      <div class="icon"><img src="./menu_icon.png" /></div>
     </nav>
-</body>
+  </body>
 </html>
