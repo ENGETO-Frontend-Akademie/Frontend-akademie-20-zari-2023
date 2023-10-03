@@ -66,17 +66,15 @@
 4. nastavení tooltipu pri najetí kurzore nad určitý text
 
 ```css
+.tooltip {
+  position: relative;
+}
+
 .tooltip-text {
   position: absolute;
   visibility: hidden;
   bottom: 20px;
   left: 50%;
-  background-color: var(--text-color);
-  color: var(--footer-text);
-  width: 200px;
-  padding: 8px;
-  border-radius: 4px;
-  font-size: 12px;
 }
 
 .tooltip:hover .tooltip-text {
