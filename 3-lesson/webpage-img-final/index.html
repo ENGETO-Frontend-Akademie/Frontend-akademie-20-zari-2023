@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Engeto 2 prakticky ukol</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation-wrapper">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="#">Home</a></li>
+          <li class="navigation-item"><a href="#">About Us</a></li>
+          <li class="navigation-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="icon"><img src="./images/menu_icon.png" /></div>
+      </div>
+    </nav>
+    <header class="hero-section">
+      <div class="hero-section-wrapper">
+        <h1 class="hero-text">
+          Welcome to <br />WebSolutions Pro <i class="fas fa-globe"></i>
+        </h1>
+      </div>
+    </header>
+    <div class="content">
+      <div class="home-section" id="home-section">
+        <h2>Welcome to Our Website</h2>
+        <p>
+          Welcome to WebSolutions Pro, your one-stop destination for innovative
+          web development and design services. Our mission is to help you
+          achieve your online goals by providing top-notch solutions tailored to
+          your needs. Whether you're a small business looking to establish an
+          online presence or a large corporation in need of a custom web
+          application, we've got you covered.
+        </p>
+      </div>
+      <div class="about-section" id="about-section">
+        <h2>About Us</h2>
+        <p>
+          At WebSolutions Pro, we are more than just a team of web developers;
+          we are a passionate group of individuals dedicated to creating amazing
+          web experiences for our clients. With years of experience in the
+          industry, we bring expertise, creativity, and a commitment to
+          excellence to every project we undertake. Our goal is to not only meet
+          but exceed your expectations and deliver results that drive success.
+        </p>
+        <div class="image-container">
+          <img src="https://shorturl.at/qQRWZ" alt="about us image" />
+        </div>
+      </div>
+
+      <div class="service-section" id="service-section">
+        <h2>Our Services</h2>
+        <p>
+          Our comprehensive range of services is designed to cater to all your
+          web-related needs. From responsive web design that ensures your site
+          looks great on all devices to e-commerce solutions that enable you to
+          sell products online seamlessly, we've got the skills and tools to
+          make it happen. Additionally, our custom
+          <span class="tooltip"
+            >web applications<span class="tooltip-text"
+              >A web application is a software program that runs in a web
+              browser and allows users to interact with and perform various
+              tasks over the internet.</span
+            ></span
+          >
+          are built to streamline your business processes and provide a unique
+          online experience for your users.
+        </p>
+        <button class="button" onclick="openModal()">Open modal</button>
+      </div>
+
+      <div class="contact-section" id="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          Your questions and inquiries are important to us. If you have any
+          queries or need more information about our services, please don't
+          hesitate to get in touch with us. You can use the form below to send
+          us a message, and we'll get back to you as soon as possible. We value
+          your feedback and look forward to hearing from you.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modalne okno -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <p>
+          This is some modal content. You can customize it as needed.This is
+          some modal content. You can customize it as needed.
+        </p>
+      </div>
+    </div>
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
