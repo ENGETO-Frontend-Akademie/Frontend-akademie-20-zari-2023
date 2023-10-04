@@ -17,7 +17,7 @@ použité technologie: media query
 
 #### Menu, které se mění z vedle sebe na pod sebou (a naopak)
 1. začít nejdřív samotnou kostrou html souboru (tzn. vytvořit strukturu nav a pod tím odkazy (obalené odkazy))
-2. trochu to nastylovat - žákům nutno ukázat display: flex a display: block
+2. trochu to nastylovat - studentům nutno ukázat display: flex a display: block
 3. dodat media query
 
 #### Menu, které na mobilu zmizí a poté se mu ukáže ikonka
