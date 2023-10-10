@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon-wrapper {
+  border: 1px solid;
+  width: 70%;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: red;
+}
+
+.icon-container {
+  color: white;
+  padding: 16px 0;
+}
+
+.icon {
+  margin-bottom: 16px;
+}
+
+.icon-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.icon i {
+  font-size: 30px;
+}

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+/* PROMO SECTION */
+.promo-section {
+  height: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  position: relative;
+}
+
+.promo-content {
+  position: absolute;
+  bottom: 16px;
+}
+
+.promo-heading {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.promo-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #d64445;
+  cursor: pointer;
+}
+
+.promo-card-1,
+.promo-card-2,
+.promo-card-3 {
+  height: 250px;
+  width: 300px;
+  border-radius: 8px;
+  position: relative;
+  padding: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+}
+
+.promo-card-1 {
+  background-image: url("./images/vysavac.png");
+}
+.promo-card-2 {
+  background-image: url("./images/mobil.png");
+}
+.promo-card-3 {
+  background-image: url("./images/clothes.png");
+}

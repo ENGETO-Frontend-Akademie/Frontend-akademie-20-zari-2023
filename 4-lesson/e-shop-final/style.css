@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+}
+
+.hero-section {
+  background-image: url("./images/hero-section-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  border-radius: 8px;
+  position: relative;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.hero-text {
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+}
+
+.hero-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #d64445;
+  cursor: pointer;
+}
+
+.sale-badge {
+  display: none;
+  background-color: #d64445;
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .sale-badge {
+    display: block;
+  }
+}
+
+/* PROMO SECTION */
+.promo-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.promo-content {
+  position: absolute;
+  bottom: 16px;
+}
+
+.promo-heading {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.promo-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #d64445;
+  cursor: pointer;
+}
+
+.promo-card-1,
+.promo-card-2,
+.promo-card-3 {
+  height: 250px;
+  width: 300px;
+  border-radius: 8px;
+  position: relative;
+  padding: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+}
+
+.promo-card-1 {
+  background-image: url("./images/vysavac.png");
+}
+.promo-card-2 {
+  background-image: url("./images/mobil.png");
+}
+.promo-card-3 {
+  background-image: url("./images/clothes.png");
+}
+
+/* CARDS SECTION */
+.cards-section {
+  background-color: #e4f5e5;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}

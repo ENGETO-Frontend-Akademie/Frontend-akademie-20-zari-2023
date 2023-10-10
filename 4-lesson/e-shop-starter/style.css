@@ -1,0 +1,104 @@
+* {
+}
+
+body {
+}
+
+.content {
+}
+
+.hero-section {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.hero-text {
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-size: 24px;
+}
+
+.hero-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #d64445;
+  cursor: pointer;
+}
+
+.sale-badge {
+  display: none;
+  background-color: #d64445;
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* PROMO SECTION */
+.promo-section {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.promo-content {
+  position: absolute;
+  bottom: 16px;
+}
+
+.promo-heading {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.promo-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #d64445;
+  cursor: pointer;
+}
+
+.promo-card-1,
+.promo-card-2,
+.promo-card-3 {
+  position: relative;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+}
+
+.promo-card-1 {
+}
+.promo-card-2 {
+}
+.promo-card-3 {
+}
+
+/* CARDS SECTION */
+.cards-section {
+  background-color: #e4f5e5;
+  padding: 1rem;
+}
