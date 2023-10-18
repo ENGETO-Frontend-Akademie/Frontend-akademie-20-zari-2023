@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .parent {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px;
+    }
+
+    .child {
+      height: 200px;
+      background-color: aqua;
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 200px;
+    }
+  </style>
+
+  <body>
+    <section>
+        <h1>Úkol 1:</h1>
+
+        <p>Náledující elementy upravte tak, aby se rozumně seskupovaly podle toho, jaká je šířka stránky
+            (na mobilu pod sebou, na tabletu 2-3 vedle sebe, na notebooku 3-4 vedle sebe...), aby byly vycentrované 
+            a vždy vyplňovaly 100% šířky stránky. Použijte pouze flexbox (bez media query).
+        </p>
+        <div class="parent">
+            <div class="child">
+                <p>Child</p>
+            </div>
+            <div class="child">
+                <p>Child</p>
+            </div>
+            <div class="child">
+                <p>Child</p>
+            </div>
+            <div class="child">
+                <p>Child</p>
+            </div>
+            <div class="child">
+                <p>Child</p>
+            </div>
+            <div class="child">
+                <p>Child</p>
+            </div>
+            <div class="child">
+                <p>Child</p>
+            </div>
+    </section>
+  </body>
+</html>

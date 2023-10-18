@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      header {
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        order: 0;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .first-section {
+        flex-basis: 300px;
+        height: 200px;
+        flex-shrink: 0;
+      }
+      @media (max-width: 1251px) {
+        .first-section {
+          order: 2;
+          flex-grow: 1;
+        }
+      }
+
+      .main-section {
+        width: calc(100% - 500px);
+        flex-basis: 550px;
+        max-width: 800px;
+        flex-shrink: 0;
+        flex-grow: 1;
+      }
+      @media (max-width: 1251px) {
+        .main-section {
+          order: 1;
+          max-width: none;
+          flex-basis: calc(100% - 20px);
+        }
+      }
+      .second-section {
+        flex-basis: 300px;
+        height: 200px;
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 1251px) {
+        .second-section {
+          order: 3;
+          flex-grow: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Hlavní nadpis</h1>
+      </header>
+      <section class="first-section">
+        <h2>Menu</h2>
+        <ul>
+          <li>Odkaz 1</li>
+          <li>Odkaz 2</li>
+          <li>Odkaz 3</li>
+          <li>Odkaz 4</li>
+          <li>Odkaz 5</li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <h1>Tady je důležitá informace</h1>
+        <p>
+          "But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and I will give you a complete
+          account of the system, and expound the actual teachings of the great
+          explorer of the truth, the master-builder of human happiness. No one
+          rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+          but because those who do not know how to pursue pleasure rationally
+          encounter consequences that are extremely painful. Nor again is there
+          anyone who loves or pursues or desires to obtain pain of itself,
+          because it is pain, but because occasionally circumstances occur in
+          which toil and pain can procure him some great pleasure. To take a
+          trivial example, which of us ever undertakes laborious physical
+          exercise, except to obtain some advantage from it? But who has any
+          right to find fault with a man who chooses to enjoy a pleasure that
+          has no annoying consequences, or one who avoids a pain that produces
+          no resultant pleasure?"
+        </p>
+        <p>
+          "But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and I will give you a complete
+          account of the system, and expound the actual teachings of the great
+          explorer of the truth, the master-builder of human happiness. No one
+          rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+          but because those who do not know how to pursue pleasure rationally
+          encounter consequences that are extremely painful. Nor again is there
+          anyone who loves or pursues or desires to obtain pain of itself,
+          because it is pain, but because occasionally circumstances occur in
+          which toil and pain can procure him some great pleasure. To take a
+          trivial example, which of us ever undertakes laborious physical
+          exercise, except to obtain some advantage from it? But who has any
+          right to find fault with a man who chooses to enjoy a pleasure that
+          has no annoying consequences, or one who avoids a pain that produces
+          no resultant pleasure?"
+        </p>
+        <p>
+          "But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and I will give you a complete
+          account of the system, and expound the actual teachings of the great
+          explorer of the truth, the master-builder of human happiness. No one
+          rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+          but because those who do not know how to pursue pleasure rationally
+          encounter consequences that are extremely painful. Nor again is there
+          anyone who loves or pursues or desires to obtain pain of itself,
+          because it is pain, but because occasionally circumstances occur in
+          which toil and pain can procure him some great pleasure. To take a
+          trivial example, which of us ever undertakes laborious physical
+          exercise, except to obtain some advantage from it? But who has any
+          right to find fault with a man who chooses to enjoy a pleasure that
+          has no annoying consequences, or one who avoids a pain that produces
+          no resultant pleasure?"
+        </p>
+      </section>
+      <section class="second-section">
+        <h2>Tady je nějaká malá informace</h2>
+        <p>tady je jenom nějaký kratší text</p>
+      </section>
+    </main>
+  </body>
+</html>
