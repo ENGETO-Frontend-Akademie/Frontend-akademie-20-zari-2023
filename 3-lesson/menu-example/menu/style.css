@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: green;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul a {
+  display: inline-block;
+  width: calc(100% / 5 - 5px);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav ul a {
+    display: block;
+    width: 100%;
+  }
+}
+
+nav ul li {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: rgb(0, 47, 0);
+}
