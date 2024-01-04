@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Video| Audio</title>
+  </head>
+  <body>
+    <main>
+      <section class="audio">
+        <header><h1>Audio</h1></header>
+        <audio controls autoplay muted loop>
+          <source src="/audio/holly_dazedd.mp3" type="audio/mpeg" />
+          <source src="/audio/01.ogg" type="audio/ogg" />
+          Váš prohlížeč nepodporuje tag audio
+        </audio>
+      </section>
+
+      <section class="video">
+        <header><h1>Video</h1></header>
+        <video controls autoplay loop muted poster="/videos/nahled.png" preload="metadata">
+          <source src="/videos/rainingInWood.mp4" type="video/mp4" />
+          <source src="/videos/rainingInWood.ogg" type="video/ogg" />
+          Váš prohlížeč nepodporuje tag video
+      </section>
+    </main>
+  </body>
+</html>

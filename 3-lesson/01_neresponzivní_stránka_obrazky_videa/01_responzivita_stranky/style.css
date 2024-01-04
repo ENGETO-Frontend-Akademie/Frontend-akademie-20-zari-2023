@@ -1,0 +1,54 @@
+:root {
+  --dark-aqua: rgb(0, 123, 123);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: var(--dark-aqua);
+}
+
+/*----------------------------------------------- nadpis --------------------------------------------------*/
+.nadpis {
+  background-color: var(--dark-aqua);
+  color: white;
+  height: 50px;
+  width: 100%;
+  margin: 20px;
+}
+
+/*----------------------------------------------- první text -----------------------------------------------*/
+.text {
+  margin: 10px 25px;
+  width: 800px;
+}
+
+/*----------------------------------------------- sloupce - tabulka -----------------------------------------------*/
+.justify {
+  text-align: justify;
+}
+
+table {
+  width: calc(100% - 50px);
+  margin: 25px;
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+}
+
+/*----------------------------------------------- sloupce - divy -----------------------------------------------*/
+.columns_container {
+  display: flex;
+}
+.column {
+  margin: 0 20px;
+  text-align: justify;
+}
+@media only screen and (max-width: 500px) {
+  .columns_container {
+    display: block;
+  }
+}
